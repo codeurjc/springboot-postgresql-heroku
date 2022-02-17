@@ -8,6 +8,7 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db/books
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_JPA_HIBERNATE_DDL-AUTO=update
   db:
     image: postgres:14.2
     environment:

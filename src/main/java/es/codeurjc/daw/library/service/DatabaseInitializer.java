@@ -23,6 +23,10 @@ public class DatabaseInitializer {
 	@PostConstruct
 	public void init() throws IOException, URISyntaxException {
 
+		if(bookRepository.count() > 0) {			
+			return; 
+		}
+		
 		// Sample books
 
 		Book book1 = new Book("SUEÑOS DE ACERO Y NEON",
