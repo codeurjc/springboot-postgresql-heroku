@@ -1,7 +1,7 @@
 version: "3.9"
 services: 
   web:
-    image: codeurjc/springboot-postgresql-heroku
+    image: codeurjc/heroku-webapp2-db
     ports:
       - 8443:8443      
     environment:
