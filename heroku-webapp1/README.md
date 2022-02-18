@@ -64,19 +64,6 @@ Luego se crea la aplicación y se configura antes de desplegar el código:
 $ heroku create <app-id>
 ```
 
-* Se añade una base de datos a la aplicación:
-
-```
-$ heroku addons:create heroku-postgresql --app <app-id>
-```
-
-* Se configuran las variables de entorno necesarias para esta app en concreto:
-
-```
-$ heroku config:set SERVER_SSL_ENABLED=false --app <app-id>
-$ heroku config:set SPRING_JPA_HIBERNATE_DDL-AUTO=update --app <app-id>
-```
-
 Cada vez que queramos desplegar la aplicación se siguen estos pasos:
 
 * Crear la imagen Docker con un nombre especial para Heroku:
